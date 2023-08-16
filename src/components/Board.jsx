@@ -5,6 +5,8 @@ import WinnerModal from './Winner-modal'
 import confetti from 'canvas-confetti'
 
 export default function Board () {
+  const [mode, setMode] = useState(1)
+
   const [turn, setTurn] = useState(() => {
     const localStorageWin = window.localStorage.getItem('turn')
     return localStorageWin ?? TURNS.X
