@@ -1,10 +1,6 @@
-import Board from './components/Board'
-import './static/App.css'
+import React from 'react';
+import Board from './components/Board';
 
-export default function App () {
-
-  
-  return (
-    <Board />
-  )
+export default function App() {
+	return <Board />;
 }
