@@ -1,6 +1,6 @@
 export const TURNS = {
-  X: '☀️',
-  Y: '🌑'
+  P1: '☀️',
+  P2: '🌑'
 }
 
 export const POSSIBLEWINS = [

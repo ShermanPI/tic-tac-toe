@@ -1,11 +1,15 @@
-export function Square ({ children, updateBoard, index }) {
+export function Square ({ children, updateBoard, index, styles }) {
   const handleclick = () => {
     updateBoard(index)
   }
 
+  
   return (
-    <div className={`square glow-${children}`} onClick={handleclick}>
-      {children}
-    </div>
-  )
+		<div
+			className={`${styles.square} ${styles[`glow-${children}`]}`}
+			onClick={handleclick}
+		>
+			{children}
+		</div>
+	);
 }
